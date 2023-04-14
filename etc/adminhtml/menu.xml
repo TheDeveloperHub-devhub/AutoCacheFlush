@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <add id="DeveloperHub_AutoCacheFlush::menu"
+             title="Auto Cache Flush"
+             module="DeveloperHub_AutoCacheFlush"
+             sortOrder="20"
+             parent="DeveloperHub_Core::developerhub"
+             resource="DeveloperHub_AutoCacheFlush::menu"/>
+        <add id="DeveloperHub_AutoCacheFlush::configuration"
+             title="Configuration"
+             module="DeveloperHub_AutoCacheFlush"
+             sortOrder="30"
+             action="admin/system_config/edit/section/auto_cache_flush"
+             resource="DeveloperHub_AutoCacheFlush::configuration"
+             parent="DeveloperHub_AutoCacheFlush::menu"
+        />
+    </menu>
+</config>
