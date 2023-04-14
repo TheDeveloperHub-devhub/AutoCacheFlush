@@ -18,3 +18,14 @@ The vendor(s) can select specific cache types that they want to flush automatica
 
 * Success Message
 After reloading the page, you’ll see a success message if any one of your selected cache types is invalidated.
+
+## Installation
+Install the module as a composer requirement for environments:
+
+```
+    composer require devhub/auto-cache-flush
+    php bin/magento module:enable DeveloperHub_AutoCacheFlush
+    php bin/magento setup:upgrade
+    php bin/magento setup:di:compile
+    php bin/magento setup:static-content:deploy
+```
